@@ -199,4 +199,69 @@ const NipponPhotographyApp = () => {
             onClick={() => openLightbox(6)}
           >
             <CardContent className="p-0">
-   
+              <div className="aspect-square relative">
+                <img
+                  src="https://placeholder-image-service.onrender.com/image/400x400?prompt=Osaka Castle with white walls and green roofs surrounded by cherry blossom trees&id=photo-6"
+                  alt="Osaka Castle with white walls and green roofs surrounded by cherry blossom trees"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-3">
+                <h3 className="font-semibold text-sm">Osaka Fortress</h3>
+                <p className="text-xs text-muted-foreground">Historical site</p>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </main>
+
+      {/* Lightbox Modal */}
+      {selectedImage && (
+        <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
+          <div className="relative max-w-4xl w-full">
+            <Button
+              variant="ghost"
+              size="icon"
+              className="absolute top-4 right-4 z-10 bg-background/50 backdrop-blur"
+              onClick={closeLightbox}
+            >
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </Button>
+            <img
+              src="https://placeholder-image-service.onrender.com/image/800x600?prompt=Detailed Japanese photography with rich colors and perfect composition, high resolution&id=lightbox"
+              alt="Detailed Japanese photography with rich colors and perfect composition"
+              className="w-full h-auto rounded-lg"
+            />
+            <div className="mt-4 text-center">
+              <h3 className="text-xl font-semibold text-white">{selectedImage}</h3>
+              <p className="text-muted-foreground">Beautiful Japanese photography</p>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Footer */}
+      <footer className="border-t border-border mt-12 py-6">
+        <div className="container mx-auto px-4 text-center">
+          <p className="text-sm text-muted-foreground">
+            © 2024 Nippon Photography. Capturing the beauty of Japan.
+          </p>
+        </div>
+      </footer>
+    </div>
+  );
+};
+
+export default NipponPhotographyApp;
