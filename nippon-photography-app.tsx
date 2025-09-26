@@ -97,6 +97,63 @@ const NipponPhotographyApp = () => {
           <Card 
             className="overflow-hidden border-border cursor-pointer hover:shadow-lg transition-shadow"
             onClick={() => openLightbox(1)}
+          >
+            <CardContent className="p-0">
+              <div className="aspect-square relative">
+                <img
+                  src="https://placeholder-image-service.onrender.com/image/400x400?prompt=Traditional Japanese temple in Kyoto with red gates and autumn colors, serene atmosphere&id=photo-1"
+                  alt="Traditional Japanese temple in Kyoto with red gates and autumn colors"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-3">
+                <h3 className="font-semibold text-sm">Kyoto Temple</h3>
+                <p className="text-xs text-muted-foreground">Ancient beauty</p>
+              </div>
+            </CardContent>
+          </Card>
 
+          {/* Photo 2 */}
+          <Card 
+            className="overflow-hidden border-border cursor-pointer hover:shadow-lg transition-shadow"
+            onClick={() => openLightbox(2)}
+          >
+            <CardContent className="p-0">
+              <div className="aspect-square relative">
+                <img
+                  src="https://placeholder-image-service.onrender.com/image/400x400?prompt=Tokyo city streets at night with neon lights and people walking, cyberpunk atmosphere&id=photo-2"
+                  alt="Tokyo city streets at night with neon lights and cyberpunk atmosphere"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-3">
+                <h3 className="font-semibold text-sm">Tokyo Nights</h3>
+                <p className="text-xs text-muted-foreground">Urban energy</p>
+              </div>
+            </CardContent>
+          </Card>
 
-export default NipponPhotographyApp;
+          {/* Photo 3 */}
+          <Card 
+            className="overflow-hidden border-border cursor-pointer hover:shadow-lg transition-shadow"
+            onClick={() => openLightbox(3)}
+          >
+            <CardContent className="p-0">
+              <div className="aspect-square relative">
+                <img
+                  src="https://placeholder-image-service.onrender.com/image/400x400?prompt=Mount Fuji at sunrise with perfect reflection in lake, dramatic clouds&id=photo-3"
+                  alt="Mount Fuji at sunrise with perfect reflection in lake and dramatic clouds"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-3">
+                <h3 className="font-semibold text-sm">Fuji Dawn</h3>
+                <p className="text-xs text-muted-foreground">Natural wonder</p>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Photo 4 */}
+          <Card 
+            className="overflow-hidden border-border cursor-pointer hover:shadow-lg transition-shadow"
+            onClick={() => openLightbox(4)}
