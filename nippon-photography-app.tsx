@@ -70,5 +70,33 @@ const NipponPhotographyApp = () => {
         </div>
       </header>
 
+      {/* Main Content */}
+      <main className="container mx-auto px-4 py-6">
+        {/* Featured Photo */}
+        <div className="mb-8">
+          <Card className="overflow-hidden border-border">
+            <CardContent className="p-0">
+              <div className="aspect-[16/9] relative">
+                <img
+                  src="https://placeholder-image-service.onrender.com/image/800x450?prompt=Featured Japanese landscape photography with Mount Fuji in background and cherry blossoms in foreground, dramatic lighting, cinematic composition&id=featured-1"
+                  alt="Featured Japanese landscape photography with Mount Fuji and cherry blossoms in dramatic lighting"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
+                  <h2 className="text-xl font-semibold text-white">Featured Shot</h2>
+                  <p className="text-muted-foreground text-sm">Mount Fuji Sunrise</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        {/* Photo Grid */}
+        <div className="grid grid-cols-2 gap-4">
+          {/* Photo 1 */}
+          <Card 
+            className="overflow-hidden border-border cursor-pointer hover:shadow-lg transition-shadow"
+            onClick={() => openLightbox(1)}
+
 
 export default NipponPhotographyApp;
