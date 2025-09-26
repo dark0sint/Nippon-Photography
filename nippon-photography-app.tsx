@@ -157,3 +157,46 @@ const NipponPhotographyApp = () => {
           <Card 
             className="overflow-hidden border-border cursor-pointer hover:shadow-lg transition-shadow"
             onClick={() => openLightbox(4)}
+          >
+            <CardContent className="p-0">
+              <div className="aspect-square relative">
+                <img
+                  src="https://placeholder-image-service.onrender.com/image/400x400?prompt=Bamboo forest in Arashiyama with tall green bamboo stalks and light filtering through&id=photo-4"
+                  alt="Bamboo forest in Arashiyama with tall green bamboo stalks and filtered light"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-3">
+                <h3 className="font-semibold text-sm">Bamboo Path</h3>
+                <p className="text-xs text-muted-foreground">Peaceful walk</p>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Photo 5 */}
+          <Card 
+            className="overflow-hidden border-border cursor-pointer hover:shadow-lg transition-shadow"
+            onClick={() => openLightbox(5)}
+          >
+            <CardContent className="p-0">
+              <div className="aspect-square relative">
+                <img
+                  src="https://placeholder-image-service.onrender.com/image/400x400?prompt=Traditional Japanese tea ceremony with matcha bowl and utensils, minimalist composition&id=photo-5"
+                  alt="Traditional Japanese tea ceremony with matcha bowl and utensils in minimalist style"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-3">
+                <h3 className="font-semibold text-sm">Tea Ritual</h3>
+                <p className="text-xs text-muted-foreground">Cultural heritage</p>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Photo 6 */}
+          <Card 
+            className="overflow-hidden border-border cursor-pointer hover:shadow-lg transition-shadow"
+            onClick={() => openLightbox(6)}
+          >
+            <CardContent className="p-0">
+   
